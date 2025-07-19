@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>It’s not the same without the flame 🔥</title>
+  <style>
+    @font-face {
+      font-family: 'FlameFont';
+      src: url('flamefont.otf') format('opentype');
+    }
+
+    body {
+      margin: 0;
+      font-family: 'FlameFont', sans-serif;
+      color: #FFCC00; /* Hot Wheels yellow */
+      background-image: url('https://s7ap1.scene7.com/is/content/bigw/110624-HotWheels-Mattel-BrandHeroBanner-Mobile-828x560px?$cms-max-image-threshold$&fmt=gif-alpha&wid=1178&fit=hfit%2C1');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .background-overlay {
+      background-color: rgba(0, 0, 0, 0.15); /* Just a hint of dark for legibility */
+      padding: 40px;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content-wrapper {
+      text-align: center;
+      max-width: 700px;
+    }
+
+    h2 {
+      font-size: 2.3em;
+      font-weight: bold;
+      text-shadow: 3px 3px #000;
+      margin-bottom: 20px;
+    }
+
+    h3, p {
+      margin: 10px 0;
+      text-shadow: 2px 2px #000;
+    }
+
+    .cta {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .qr-code {
+      width: 150px;
+      margin-top: 20px;
+    }
+
+    .audio-player {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .audio-player iframe {
+      width: 300px;
+      height: 75px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-overlay">
+    <div class="content-wrapper">
+      <h2>Come join us to celebrate</h2>
+      <h3>Elliot’s Fast Fifth Birthday!</h3>
+      <p>🏁 Date: January 31st, 2026</p>
+      <p>⏰ Time: 1 PM EST</p>
+      <p>📍 Location: 26 Derlon Ln., Litchfield</p>
+      <p class="cta">Scan the QR code to RSVP and rev your engines!</p>
+      <img src="qr-code.png" alt="QR Code for RSVP" class="qr-code">
+    </div>
+  </div>
+
+  <div class="audio-player">
+    <iframe 
+      src="https://www.youtube.com/embed/razlGRA845w?start=0&end=28&autoplay=1&loop=1&playlist=razlGRA845w&controls=1" 
+      frameborder="0" 
+      allow="autoplay; encrypted-media" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
