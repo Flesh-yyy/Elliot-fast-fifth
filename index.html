@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>It’s not the same without the flame 🔥</title>
   <style>
     @font-face {
@@ -14,64 +14,66 @@
       font-family: 'FlameFont', sans-serif;
       color: #FFCC00;
       background-image: url('https://s7ap1.scene7.com/is/content/bigw/110624-HotWheels-Mattel-BrandHeroBanner-Mobile-828x560px?$cms-max-image-threshold$&fmt=gif-alpha&wid=1178&fit=hfit%2C1');
-      background-size: contain; /* now shows full image */
-      background-position: center top;
-      background-attachment: fixed;
+      background-size: cover;
+      background-position: center center;
       background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     .background-overlay {
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.15);
       padding: 60px 40px;
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
     }
 
     .content-wrapper {
       text-align: center;
-      max-width: 900px;
+      max-width: 1000px;
     }
 
     h2 {
-      font-size: 4em;
-      font-weight: bold;
+      font-size: 5em;
       text-shadow: 4px 4px #000;
       margin-bottom: 30px;
     }
 
     h3 {
-      font-size: 3em;
+      font-size: 4em;
       text-shadow: 3px 3px #000;
       margin-bottom: 25px;
     }
 
     p {
-      font-size: 2em;
+      font-size: 2.2em;
       text-shadow: 2px 2px #000;
       margin: 14px 0;
     }
 
     .cta {
       margin-top: 30px;
+      font-size: 2.5em;
       font-weight: bold;
-      font-size: 2em;
     }
 
     .audio-player {
       margin-top: 50px;
+      text-align: center;
     }
 
     audio {
-      width: 320px;
+      width: 340px;
+      background-color: transparent;
+      outline: none;
     }
 
     @media (max-width: 600px) {
-      h2 { font-size: 2.6em; }
-      h3 { font-size: 2em; }
-      p, .cta { font-size: 1.4em; }
+      h2 { font-size: 3em; }
+      h3 { font-size: 2.4em; }
+      p, .cta { font-size: 1.6em; }
       audio { width: 260px; }
     }
   </style>
@@ -90,7 +92,7 @@
     <div class="audio-player">
       <audio controls autoplay loop>
         <source src="hotwheels.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+        Your browser doesn’t support the audio tag.
       </audio>
     </div>
   </div>
