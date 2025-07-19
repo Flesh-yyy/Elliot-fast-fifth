@@ -15,14 +15,15 @@
       color: #FFCC00; /* Hot Wheels yellow */
       background-image: url('https://s7ap1.scene7.com/is/content/bigw/110624-HotWheels-Mattel-BrandHeroBanner-Mobile-828x560px?$cms-max-image-threshold$&fmt=gif-alpha&wid=1178&fit=hfit%2C1');
       background-size: cover;
+      background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
     }
 
     .background-overlay {
-      background-color: rgba(0, 0, 0, 0.15); /* Just a hint of dark for legibility */
+      background-color: rgba(0, 0, 0, 0.15);
       padding: 40px;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -30,42 +31,61 @@
 
     .content-wrapper {
       text-align: center;
-      max-width: 700px;
+      max-width: 800px;
     }
 
     h2 {
-      font-size: 2.3em;
+      font-size: 3em;
       font-weight: bold;
-      text-shadow: 3px 3px #000;
+      text-shadow: 4px 4px #000;
       margin-bottom: 20px;
     }
 
-    h3, p {
-      margin: 10px 0;
+    h3 {
+      font-size: 2.2em;
+      text-shadow: 3px 3px #000;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.5em;
       text-shadow: 2px 2px #000;
+      margin: 10px 0;
     }
 
     .cta {
-      margin-top: 20px;
+      margin-top: 25px;
       font-weight: bold;
-      font-size: 1.1em;
-    }
-
-    .qr-code {
-      width: 150px;
-      margin-top: 20px;
+      font-size: 1.6em;
     }
 
     .audio-player {
       display: flex;
       justify-content: center;
-      margin-top: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
 
     .audio-player iframe {
-      width: 300px;
-      height: 75px;
+      width: 360px;
+      height: 90px;
       border: none;
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 2.2em;
+      }
+      h3 {
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      .audio-player iframe {
+        width: 280px;
+        height: 75px;
+      }
     }
   </style>
 </head>
@@ -77,8 +97,7 @@
       <p>🏁 Date: January 31st, 2026</p>
       <p>⏰ Time: 1 PM EST</p>
       <p>📍 Location: 26 Derlon Ln., Litchfield</p>
-      <p class="cta">Scan the QR code to RSVP and rev your engines!</p>
-      <img src="qr-code.png" alt="QR Code for RSVP" class="qr-code">
+      <p class="cta">Fire up the music and let's race!</p>
     </div>
   </div>
 
